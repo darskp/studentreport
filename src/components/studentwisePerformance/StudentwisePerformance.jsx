@@ -270,7 +270,6 @@ const SortableTable = () => {
                         const subItemCount = row.subConcept.length || 0;
                         const rootItemCount1 = item?.rootConcepts?.length || 0;
                         const rootItemHeight = subItemCount > 1 ? `${100 / subItemCount}%` : "auto";
-                        const check = row.subConcept.length > 1;
                         return (
                           <Box key={item.id} style={{ display: 'flex', flexDirection: 'column', }}>
                             {item.rootConcepts.map((rootItem, index) => {
